@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+}
+.contenmInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1pc;
+}
+img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+nav{
+    display: flex;
+    padding: 20px 75px;
+    justify-content: space-between;
+    align-items: center;    
+}
+.listaTop{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.caferojo{
+    display: flex;
+    /* height: 25pc; */
+    background-color: rgba(255, 0, 0, 0.802);
+}
+.caferojo img{
+    width: 50%;
+    height: 100%;
+}
+.rojo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.bebidas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f0eb;
+  font-size: 20px;
+    width: 100%;
+}
+.bebidas2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a322c;
+  font-size: 20px;
+    width: 100%;
+}
+.bebidas div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5pc;
+}
+.bebidas img{
+    width: 50%;
+    height: 90%;
+}
+
+#enlaceconoce{
+    padding: 8px;
+    border-radius: 7pc;
+    border: 1px solid black;
+    font-size: 1pc;
+}
+.bebidas2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    gap: 1.5pc;
+}
+.bebidas2 img{
+    width: 50%;
+    height: 100%;
+}
+#enlaceinforme{
+    padding: 8px;
+    border-radius: 7pc;
+    border: 1px solid;
+    font-size: 1pc;
+    background-color: transparent;
+    color: white;
+}
+#enlaceinfo{
+    padding: 8px;
+    border-radius: 7pc;
+    border: 1px solid;
+    font-size: 1pc;
+    background-color: transparent;
+    color: white;
+}
+.containercliente{
+    display: flex;
+    background-color:white ;
+    padding: 2pc;
+    display: flex;
+    justify-content: space-between;
+}
+.containercliente div{
+    display: flex;
+    line-height: 2.5;
+}
+.containercliente img{
+    height: 8pc;
+    width: 12pc;
+}
+h4{
+    font-size: 17px;
+}
+li p{
+    font-size: 15px;
+    color: #777777;
+
+}
+.containerredes{
+    border-top: 1px solid #eee;
+    display: flex;
+    padding: 2pc;
+    gap: 2pc;
+    justify-content: center;
+}
+.containerredes i{
+    font-size: 25px;
+}
+.containerweb{
+    display: flex;
+    justify-content: center;
+    gap: 2pc;
+    color: #777;
+}
+.containerweb2{
+    display: flex;
+    color: #777;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+}
+.iconsHeader{
+    display: flex;
+    align-items: center;
+    gap: 0.6pc;
+}
+
+/* Small */
+@media screen and (max-width: 576px) {
+    .iconsHeader a{
+        display: none;
+    }
+    .iconolist{
+        display: block;
+    }
+    .iconogeo{
+        display: none;
+    }
+    .listaTop{
+        display: none;
+    }
+    .contenmInfo{
+        flex-direction: column;
+    }
+    .caferojo{
+        flex-direction: column;
+    }
+    .bebidas{
+        flex-direction: column-reverse;
+    }
+    .bebidas div{
+        padding: 30px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        }
+    .bebidas2{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .bebidas2 img{
+        width: 100%;
+        height: 300px;
+    }
+    .bebidas2 div{
+        padding: 30px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        }
+    
+    #imagen{
+        width: 100%;
+        height: 300px ;
+    }
+    .bebidas img{
+        width: 100%;
+        height: 293px
+    }
+    .rojo{
+        padding: 30px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .containercliente{
+        flex-direction: column;
+    }
+    .containerweb{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+    .containerweb2{
+        font-size: 10px;
+    }
+    .containercliente{
+        display: grid;
+    }
+}
+
+/* Extra small */
+@media screen and (min-width: 576px) {
+    .iconsHeader a{
+        display: none;
+    }
+    .iconolist{
+        display: block;
+    }
+    .iconogeo{
+        display: none;
+    }
+    .contenmInfo{
+        flex-direction: column;
+    }
+    
+    .rojo{
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+    }
+    .bebidas{
+        text-align: center;
+        font-size: 14px;
+    } 
+    
+      
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+    .iconsHeader a{
+        display: flex;
+    }
+    .logo{
+        display: flex;
+    }
+    .iconolist{
+        display: none;
+    }
+    .iconogeo{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
+    .café{
+        display: flex;
+    }
+    .Novedades{
+        display: flex;
+    }
+    .Tienda{
+        display: flex;
+    }
+    .contenmInfo{
+        flex-direction: column;
+    }
+    #imagen{
+        width: 50%;
+        height: 286px ;
+    }
+    .bebidas{
+        text-align: center;
+        font-size: 18px;
+    }
+    .bebidas2{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .iconsHeader a, .iconogeo{
+        display: block;
+    }
+    .iconolist{
+        display: none;
+    }
+    .logo{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
+    .café{
+        display: flex;
+    }
+    .Novedades{
+        display: flex;
+    }
+    .Tienda{
+        display: flex;
+    }
+    
+}
+/* large */
+@media screen and (min-width: 1200px) 
+{
+    .logo{
+        display: flex;
+    }
+    .iconolist{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .café{
+        display: flex;
+    }
+    .Novedades{
+        display: flex;
+    }
+    
+    .Tienda{
+        display: flex;
+    }
+    #imagen{
+        width: 51%;
+        height: 19%;
+    }
+}
+    
